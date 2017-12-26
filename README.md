@@ -65,4 +65,6 @@ Vue.use(VueAwesomeSwiper)
   }
 </script>
 ```
+## 运行并查看效果
+- 运行 express-server.js（启动服务端） && npm run dev（运行启动前端项目）   在指定网址端口查看效果
 

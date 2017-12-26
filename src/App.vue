@@ -1,14 +1,18 @@
 <template>
     <div id="app">
       <router-view></router-view>
+      <Tab></Tab>
     </div>
 </template>
 <script>
+  import Tab from "./base/Tab.vue"
     export default {
         name:"app",
         methods: {},
         computed: {},
-        components: {}
+        components: {
+          Tab
+        }
     }
 </script>
 <style>
@@ -18,3 +22,4 @@
   input,button{-webkit-appearance:none;}
   .content{position: fixed;width: 100%;top: 40px;bottom: 50px;overflow: auto}
 </style>
+

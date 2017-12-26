@@ -25,5 +25,6 @@ let routes = [
 export default new VueRouter({
   routes
 })
+//routes：routes 简写成  routes
 
 
