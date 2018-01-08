@@ -7,8 +7,10 @@
 <script>
     export default {
         props:{
-          type:Boolean,
-          default:false
+          back:{
+            type:Boolean,
+            default:false
+          }
         },
         methods: {
           goBack(){
