@@ -30,7 +30,7 @@ export let removeBook = (id) =>{
 export let findOneBook = (id) =>{
   return axios.get(`/book?id=${id}`);
 };
-
+//首页获取sliders和hotBook
 export let getAll = () =>{
   return axios.all([getSliders(),getHotBook()]);
 };

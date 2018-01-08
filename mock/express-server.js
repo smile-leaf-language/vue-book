@@ -56,14 +56,14 @@ app.get('/page',function (req,res) {
 app.get("/sliders",(req,res)=>{
   res.json(sliders);
 });
-
+//home 请求返回的热门图书
 app.get('/hot',function (req,res) {
   read(function (books) {x
     let hot = books.reverse().slice(0, 6);
     res.json(hot);
   });
 });
-
+//请求图书列表
 app.get('/book',function (req,res) {
   let id = parseInt(req.query.id);
   if(!isNaN(id)){
