@@ -13,9 +13,9 @@ Vue.use(VueRouter);
 //路由映射
 let routes = [
   {path:"/",redirect:"/home"},
-  {path:"/home",component:Home},
+  {path:"/home",component:Home,meta:{keepAlive:true,title:'首页'}},
   {path:"/list",component:List},
-  {path:"/detail",component:Detail},//后面需要设计动态路由    待定
+  {path:'/detail/:bid',component:Detail,name:"detail"},//后面需要设计动态路由    待定
   {path:"/add",component:Add},
   {path:"/Collect",component:Collect},
   {path:"*",redirect:"/home"}

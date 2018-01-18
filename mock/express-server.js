@@ -58,7 +58,7 @@ app.get("/sliders",(req,res)=>{
 });
 //home 请求返回的热门图书
 app.get('/hot',function (req,res) {
-  read(function (books) {x
+  read(function (books) {
     let hot = books.reverse().slice(0, 6);
     res.json(hot);
   });
